@@ -1,0 +1,54 @@
+
+.button-grid {
+    display: grid;
+    grid-template-rows: 1fr minmax(40px, 80px) 1fr; /* La fila 2 tendrá una altura máxima de 20px */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas con tamaños iguales */
+    gap: 10px;
+    height: 100vh; /* Altura del grid igual al 100% del viewport */
+    margin: 10 auto;
+}
+
+
+button {
+    font-size: 16px;
+}
+.titu{
+    grid-row: 3;
+    grid-column: 3;
+    text-align: center;
+    background-color: salmon;
+    margin: 0;
+
+}
+.titu2{
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    text-align: center;
+    background-color: salmon;
+    margin: 0;
+ 
+ }
+.button1 {
+    grid-row: 1; /* Fila 1 */
+    grid-column: 1; /* Columna 1 */
+}
+
+.button2 {
+    grid-row: 1; /* Fila 1 */
+    grid-column: 2; /* Columna 2 */
+}
+
+.button3 {
+    grid-row: 1; /* Fila 1 */
+    grid-column: 3; /* Columna 3 */
+}
+
+.button4 {
+    grid-row: 2; /* Fila 2 */
+    grid-column: 1 / span 3; /* Columna 1 a 3 */
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
